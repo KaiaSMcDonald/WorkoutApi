@@ -34,7 +34,7 @@ exercises = result.get("Exercises",[])
 exercises_with_10_reps = []
 
 
-#Loop through all of the exercises to locate those with 12 reps 
+#Loop through all of the exercises to locate those with 10 reps 
 for exercise in exercises:
     reps = exercise.get("Reps", "") #access the value associated with the key "Reps" in the dictionary
     if "10 reps" in reps: # checks to see if "10 reps" exists as a substring within the reps variable
